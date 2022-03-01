@@ -9,7 +9,24 @@ local Services = {
     RunService = game:GetService("RunService"),
     Lighting = game:GetService("Lighting"),
 }
-
+-- [UI Library Settings]
+local Library = {
+tabs = {},
+draggable = true,
+flags = {},
+title = "Catwinning.pub | Your name: " ..game.Players.LocalPlayer.Name,
+open = false,
+mousestate = inputService.MouseIconEnabled,
+popup = nil,
+instances = {},
+connections = {},
+options = {},
+notifications = {},
+tabSize = 0,
+theme = {},
+foldername = "Catwinning",
+fileext = ".pub"
+}
 -- [Funcs]
 local Funcs = {};
 getgenv().runService = game:GetService"RunService"
